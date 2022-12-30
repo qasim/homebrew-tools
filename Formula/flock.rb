@@ -1,7 +1,7 @@
 class Flock < Formula
     desc "Rapid file download using concurrent connections"
     homepage "https://github.com/qasim/Flock"
-    url "https://github.com/qaim/Flock.git", tag: "0.1.0", revision: "8b6ccf3be606cc08fbcc7290d61a83946e7acc91"
+    url "https://github.com/qasim/Flock.git", tag: "0.1.0", revision: "8b6ccf3be606cc08fbcc7290d61a83946e7acc91"
     license "MIT"
     head "https://github.com/qasim/Flock.git", branch: "main"
 
