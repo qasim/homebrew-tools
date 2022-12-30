@@ -11,7 +11,7 @@ class Flock < Formula
     uses_from_macos "swift"
 
     def install
-        system "swift", "build", "-c", "release"
+        system "swift", "build", "--disable-sandbox", "-c", "release"
         bin.install ".build/release/flock"
     end
 end
