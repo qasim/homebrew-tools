@@ -11,7 +11,9 @@ class Flock < Formula
     uses_from_macos "swift"
 
     def install
-        system "swift", "build", "--disable-sandbox", "-c", "release"
-        bin.install ".build/release/flock"
+        chdir "CLI" do
+            system "swift", "build", "--disable-sandbox", "-c", "release"
+            bin.install ".build/release/flock"
+        end
     end
 end
